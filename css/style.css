@@ -1,7 +1,6 @@
 /* reset */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,8 +15,17 @@ header {
 }
 
 main {
-  background-color: grey;
+  padding-top: 80px;
+  background-color: #f6f8f9;
   height: 1000px;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 1000px;
 }
 
 /* header  */
@@ -33,3 +41,28 @@ main {
   vertical-align: middle;
 }
 
+/* main: button */
+
+.btn {
+  padding: 22px 150px 14px 80px;
+  border-bottom: 5px solid #f6f8f9;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#selected {
+  color: white;
+  background-color: #47adf1;
+  border: 3px solid #47adf1 ;
+}
+
+#not-selected {
+  color: #cbd1d6;
+  background-color: white;
+  border: 3px solid #cbd1d6;
+  /* border-color: #cbd1d6; */
+}
