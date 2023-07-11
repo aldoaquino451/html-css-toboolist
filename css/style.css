@@ -1,5 +1,6 @@
 /* reset */
 * {
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -16,8 +17,8 @@ header {
 
 main {
   padding-top: 80px;
+  padding-bottom: 40px;
   background-color: #f6f8f9;
-  height: 1000px;
 }
 
 .container {
@@ -25,7 +26,6 @@ main {
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
-  min-height: 1000px;
 }
 
 /* header  */
@@ -65,4 +65,49 @@ button {
   background-color: white;
   border: 3px solid #cbd1d6;
   /* border-color: #cbd1d6; */
+}
+
+/* main:list */
+
+.list {
+  padding: 70px 80px;
+}
+
+.list b {
+  font-size: 40px;
+  padding: 20px 20px;
+}
+
+.list li {
+  font-size: 26px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.list span {
+  width: 35px;
+  height: 35px;
+  color: green;
+  border: 2px solid  green;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+.cross, .check {
+  display: inline-block;  
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.check {
+  color: green;
+  border: 2px solid green;
+}
+
+.cross {
+  color: red;
+  border: 2px solid red;
 }
