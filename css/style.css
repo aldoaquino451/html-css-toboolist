@@ -66,7 +66,7 @@ button {
   border: 3px solid #cbd1d6;
 }
 
-/* main:list */
+/* main: list */
 
 .list {
   padding: 70px 80px;
@@ -103,10 +103,21 @@ button {
 .cross {
   color: red;
   border: 2px solid red;
-}
+} 
+/* versione alternativa: inserisci il tag span ma dato che width e heigth non funzionano perchè stiamo parlando di caratteri, modifica il padding per darà la forma di un cerchio al bordo
+
+span.check   {
+  color: green;
+  border: 2px solid green;
+  padding: 4px 8px;
+  border-radius: 100%;
+  text-align: center;
+} 
+*/
+
 
 /* list-button */
-
+ 
 .list-button {
   font-size: 16px;
   padding: 12px 20px;
@@ -139,3 +150,16 @@ button {
   background-color: #b0c926;
 }
 
+/* versione alternativa: si inserisce il "falso bottone" con la pseudo classe ::after e si applicano le proprietà, però va copia e incollato per tutti i falsi bottoni.
+per provare inserisci una classe subtitle nel tag <li> della lista genitore:
+
+.subtitle li::after {
+  content: "Editorial";
+  background-color: green;      
+  font-size: 16px;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+} 
+*/
