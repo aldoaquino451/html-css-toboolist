@@ -9,6 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 header {
@@ -16,93 +17,114 @@ header {
 }
 
 main {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 50px;
   background-color: #f6f8f9;
 }
 
 .container {
   width: 70%;
+  min-width: 420px;
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* header  */
 
 .logo img {
-  height: 100px;
+  height: 40px;
   vertical-align: middle;
 }
 
 .logo span {
   font-weight: 700;
-  font-size: 80px;
+  font-size: 40px;
   vertical-align: middle;
 }
 
 /* main: button */
 
 .btn {
-  padding: 22px 150px 14px 80px;
+  padding: 20px 40px;
   border-bottom: 5px solid #f6f8f9;
 }
 
 button {
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 18px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
 #selected {
   color: white;
   background-color: #47adf1;
-  border: 3px solid #47adf1 ;
+  border: 2px solid #47adf1 ;
+}
+#selected:hover {
+  color: #47adf1;
+  background-color: white;
+  cursor: pointer;
 }
 
 #not-selected {
   color: #cbd1d6;
   background-color: white;
-  border: 3px solid #cbd1d6;
+  border: 2px solid #cbd1d6;
+
+}
+#not-selected:hover {
+  color: white;
+  background-color: #47adf1;
+  border: 2px solid #47adf1;
+  cursor: pointer;
 }
 
 /* main: list */
 
 .list {
-  padding: 70px 80px;
+  padding: 30px;
 }
 
-.list b {
-  font-size: 40px;
-  padding: 20px 20px;
+.list > li {
+  padding-bottom: 30px;
 }
 
-.list li {
-  font-size: 22px;
-  padding: 20px;
-  list-style-type: none;
+.list li b {
+  font-size: 1.5rem;
 }
 
-.list div {
+.list li ul li {
+  padding-top: 15px;
+}
+
+.list div,
+.list p {
   display: inline-block;
 }
 
+.list p {
+  margin: 0 8px;
+}
+
 .cross, .check { 
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   border-radius: 100%;
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
+  border: 1px solid;
 }
 
 .check {
   color: green;
-  border: 2px solid green;
 }
 
 .cross {
   color: red;
-  border: 2px solid red;
 } 
 /* versione alternativa: inserisci il tag span ma dato che width e heigth non funzionano perchè stiamo parlando di caratteri, modifica il padding per darà la forma di un cerchio al bordo
 
@@ -119,11 +141,10 @@ span.check   {
 /* list-button */
  
 .list-button {
-  font-size: 16px;
-  padding: 12px 20px;
+  padding: 6px 12px;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .editorial {
