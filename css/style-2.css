@@ -1,0 +1,17 @@
+.list {
+  font-size: 50px;
+}
+
+.prima * {
+  background-color: bisque;
+  height: 200px;
+}
+
+
+li ul li div:nth-child(1) {
+  background-color: blueviolet;
+}
+
+div.check {
+  display: inline-block;
+}
